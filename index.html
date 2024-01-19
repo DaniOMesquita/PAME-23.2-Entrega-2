@@ -71,5 +71,13 @@
             </footer>
     </main>
     <script src="./gitFluxoBackend.js"></script>
+    <script>
+        const form = document.getElementById("form");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            alert("Cadastrado com sucesso.\nLogin$");
+        });
+    </script>
 </body>
 </html>
