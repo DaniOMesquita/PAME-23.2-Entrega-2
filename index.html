@@ -17,21 +17,10 @@
         </div>
         <h1 class="slogan">Let's build from here</h1>  
     </header>
-    <footer class="mainFooter">
-        <div class="linksRodape">
-            <ul>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Contact GitFluxo Support</a></li>
-                <li><a href="#">Do not share my personal information</a></li>
-            </ul>
-        </div>
-    </footer>
     <main>
         <h1 class="titulo">Sign in to GitFluxo</h1> 
         <div class="box">
-            <form action="">
+            <form id="form" class="form">
                 <fieldset>
                     <div class="inputBox">
                         <label for="user">Username or email address</label>
@@ -39,7 +28,10 @@
                     </div>
                     <br>
                     <div class="inputBox">
-                        <label for="password">password</label>  
+                        <div class="labelElinkSenha">
+                            <label for="password">password</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
                         <input type="password" name="password" id="password" class="inputUser" required>
                     </div>
                     <br>
@@ -52,22 +44,32 @@
                     </div>
                     <br>
                     <button name="subject" type="submit" value="signIn" class="signIn">Sign in</button>
-                    <br>
                     <p class="or">or</p>
-                    <br>
                     <button name="subject" type="submit" value="google" class="google">
                     
-                    <img src="./img/image 4.png" alt="Avatar"/>
+                    <img src="./img/image 4.png" alt="Avatar" class="imgGoogle"/>
                     Continue with Google
                     </button>
                     <br>
                     <button name="subject" type="submit" value="facebook" class="facebook">
-                    <img src="./img/image 3.png" alt="Avatar"/>
+                    <img src="./img/image 3.png" alt="Avatar" class="imgFacebook"/>
                     Continue with Facebook
                     </button>
                 </fieldset>
             </form>
         </div> 
+            <footer class="mainFooter">
+                <div class="linksRodape">
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Contact GitFluxo Support</a></li>
+                        <li><a href="#">Do not share my personal information</a></li>
+                    </ul>
+                </div>
+            </footer>
     </main>
+    <script src="./gitFluxoBackend.js"></script>
 </body>
 </html>
